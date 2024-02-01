@@ -1,0 +1,177 @@
+/* style.css */
+@font-face {
+    font-family: 'UltraKill';
+    src: url('/VCR_OSD_MONO_1.001.ttf') format('truetype');
+
+  }
+/* Original Styles */
+/* Original Styles */
+h1 {
+    font-family: 'UltraKill';
+    background-color: #2a2a2a;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    padding: 20px;
+}
+
+body {
+    font-family: 'UltraKill';
+    background-color: #1a1a1a; /* Dark background */
+    color: #fff; /* Light text */
+    line-height: 1.7;
+    text-align: left;
+    padding: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+#navbar {
+    background-color: #333; /* Dark navbar */
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    padding-top: 20px;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#navbar ul li {
+    margin-bottom: 10px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 20px;
+}
+
+#navbar ul li a:hover {
+    background-color: #4CAF50;
+}
+
+/* Main Content Area */
+#main-content {
+    margin-left: 200px; /* Adjust based on navbar width */
+    padding: 20px;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 20px;
+    background-color: #262626; /* Slightly lighter background for sections */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #333; /* Dark header for tables */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #2e2e2e; /* Zebra striping for rows */
+}
+
+/* Responsive Font Sizes */
+h1 {
+    font-size: 6vw; /* Larger on smaller screens for readability */
+}
+
+body {
+    font-size: 1.5em; /* Adjusted font size */
+    line-height: 1.4; /* Adjust line height for better readability */
+}
+
+/* Control Word Wrapping */
+p, li, td, th {
+    word-wrap: break-word; /* Break long words */
+    overflow-wrap: break-word; /* Prevent overflow */
+}
+
+/* Responsive Table */
+@media screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    td, th {
+        /* Word wrapping inside table cells */
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    td:before {
+        font-size: 5vw; /* Responsive font size for labels */
+    }
+}
+
+/* Media Queries for Responsive Layout */
+@media screen and (max-width: 768px) {
+    #navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    #navbar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #main-content {
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    h1 {
+        font-size: 8vw;
+    }
+
+    body {
+        font-size: 4vw;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+    }
+
+    #main-content {
+        padding: 10px;
+    }
+}
+

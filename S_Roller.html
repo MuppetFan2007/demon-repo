@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D Attack Roll Calculator</title>
+    <link rel="stylesheet" href="css/style_s_roll.css">
+</head>
+<body>
+    <div class="hamburger-menu">
+        <div class="menu-bar bar1"></div>
+        <div class="menu-content">
+            <a href="index.html">Home</a>
+        </div>
+    </div>
+    
+    <div class="container">
+
+        <h1>Straight Dice Roller</h1>
+
+        <!-- Input Fields -->
+        <input type="number" id="numRolls" placeholder="Enter Number of Rolls">
+        <input type="number" id="BonusMod" placeholder="Bonus Modifier">
+        <select id="rollingMethod">
+            <option value="Straight">Straight</option>
+            <option value="Advantage">Advantage</option>
+            <option value="Disadvantage">Disadvantage</option>
+        </select>
+
+        <!-- Buttons -->
+        <button id="calculateButton" class = "btn">Calculate</button>
+        <button id="resetButton">Reset</button>
+
+        <!-- Output -->
+        <div id="outputText"></div>
+        <div id="totalDamageText"></div>
+    </div>
+
+    <script src="/scripts/SDR_script.js"></script>
+</body>
+</html>

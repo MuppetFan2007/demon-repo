@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D Attack Roll Calculator</title>
+    <link rel="stylesheet" href="css/atk.css">
+</head>
+<body>
+    <div class="hamburger-menu">
+        <div class="menu-bar bar1"></div>
+        <div class="menu-content">
+            <!-- Add your menu items here -->
+            <a href="index.html">Home</a>
+        </div>
+    </div>
+    <div class="container">
+
+        <h1>D&D Attack!</h1>
+
+        <!-- Input Fields -->
+        <input type="number" id="numAttacks" placeholder="Enter Number of Attacks">
+        <input type="number" id="bonusDamage" placeholder="Bonus Damage">
+        <input type="number" id="numHitDice" placeholder="Number of Hit Dice">
+        <select id="hitDiceSides">
+            <option value="4">d4</option>
+            <option value="6">d6</option>
+            <option value="8">d8</option>
+            <option value="10">d10</option>
+            <option value="12">d12</option>
+        </select>
+        <!-- Buttons -->
+        <button id="calculateButton" class = "btn">Calculate</button>
+        <button id="resetButton">Reset</button>
+
+        <!-- Output -->
+        <div id="outputText"></div>
+        <div id="totalDamageText"></div>
+    </div>
+
+    <script src="/scripts/atk.js"></script>
+</body>
+</html>
